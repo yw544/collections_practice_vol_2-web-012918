@@ -72,7 +72,7 @@ def organize_schools(hash)
   hash.each do |school, data|
     data.each do |key, location|
       if t_hash.include?(location)
-        t_hash << school
+        t_hash[location].push(school)
 
       else
         t_hash[location] = [school]
