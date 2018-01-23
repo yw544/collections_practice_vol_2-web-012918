@@ -56,4 +56,3 @@ def merge_data(key, data)
   end
   data_arr
 end
-
