@@ -56,3 +56,28 @@ def merge_data(key, data)
   end
   data_arr
 end
+
+def find_cool(arr)
+  empty_arr = []
+  arr.each do |hash|
+    if hash[:temperature] == "cool"
+      empty_arr << hash
+    end
+  end
+  empty_arr
+end
+
+def organize_schools(hash)
+  t_hash = {}
+  hash.each do |school, data|
+    data.each do |key, location|
+      if t_hash.include?(location)
+        t_hash << school
+
+      else
+        t_hash[location] = [school]
+      end
+    end
+  end
+  t_hash
+end
