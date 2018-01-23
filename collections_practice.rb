@@ -43,3 +43,17 @@ empty_hash.each do |name, count|
 end
 empty_arr
 end
+
+def merge_data(key, data)
+  data_arr = []
+  key.each do |element|
+    element.each do |key2, value|
+      if data[0].keys.include?(value)
+        temp_hash = element.merge(data[0][value])
+        data_arr << temp_hash
+      end
+    end
+  end
+  data_arr
+end
+
