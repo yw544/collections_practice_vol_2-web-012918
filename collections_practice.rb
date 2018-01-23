@@ -5,6 +5,5 @@ if element[0] != "r"
   return true
 
 end
-end
 false
 end
