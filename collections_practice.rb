@@ -2,9 +2,9 @@
 def begins_with_r(arr)
 arr.each.do |element|
 if element[0] != "r"
-  return false
+  return true
 
 end
 end
-true
+false
 end
